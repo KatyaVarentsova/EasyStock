@@ -1,0 +1,21 @@
+.button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out ;
+}
+
+.primary {
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    color: var(--color-not-easy-white);
+}
+
+.primary:hover {
+    background: var(--color-hover);
+    color: var(--color-not-easy-white);
+}
+
+.primary:active {
+    background: var(--color-not-easy-white);
+    color: var(--color-accent);
+}

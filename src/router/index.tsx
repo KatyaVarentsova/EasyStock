@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import MainLayout from '../layouts/MainLayout';
 import {
   LoginPage,
   MainPage,
@@ -16,45 +17,18 @@ const AppRouter = () => (
       <Route path="/login" element={<LoginPage />} />
 
       <Route
-        path="/main"
         element={
           <ProtectedRoute>
-            <MainPage />
+            <MainLayout />
           </ProtectedRoute>
         }
-      />
-      <Route
-        path="/analytics"
-        element={
-          <ProtectedRoute>
-            <AnalyticsPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/notifications"
-        element={
-          <ProtectedRoute>
-            <NotificationsPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/orders"
-        element={
-          <ProtectedRoute>
-            <OrdersPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/supplies"
-        element={
-          <ProtectedRoute>
-            <SuppliesPage />
-          </ProtectedRoute>
-        }
-      />
+      >
+        <Route path="/main" element={<MainPage />} />
+        <Route path="/analytics" element={<AnalyticsPage />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/orders" element={<OrdersPage />} />
+        <Route path="/supplies" element={<SuppliesPage />} />
+      </Route>
 
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>

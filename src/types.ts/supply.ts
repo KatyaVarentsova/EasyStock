@@ -1,6 +1,6 @@
 export interface Supply {
   id: string;
-  supplierName: string;
+  supplier: string;
   products: SupplyItem[];
   createdAt: string;
   receivedBy: string;

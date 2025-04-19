@@ -5,7 +5,7 @@ export const AnalyticsPage = () => {
   return (
     <HomeLayout>
       <div className={styles.container}>
-        <button>ТЕСТ</button>
+        <button>ТЕСТ 1</button>
       </div>
     </HomeLayout>
   );

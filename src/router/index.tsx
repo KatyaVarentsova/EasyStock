@@ -6,6 +6,7 @@ import {
   NotificationsPage,
   OrdersPage,
   SuppliesPage,
+  OrdersDetailsPage
 } from "../pages";
 import ProtectedRoute from "./ProtectedRoute";
 
@@ -52,6 +53,14 @@ const AppRouter = () => (
         element={
           <ProtectedRoute>
             <SuppliesPage />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/orders/:orderNumber"
+        element={
+          <ProtectedRoute>
+            <OrdersDetailsPage />
           </ProtectedRoute>
         }
       />

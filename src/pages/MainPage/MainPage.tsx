@@ -6,7 +6,7 @@ export const MainPage = () => {
   return (
     <HomeLayout>
       <div className={styles.container}>
-        <button>ТЕСТ</button>
+        <button>ТЕСТ 2</button>
       </div>
     </HomeLayout>
   );

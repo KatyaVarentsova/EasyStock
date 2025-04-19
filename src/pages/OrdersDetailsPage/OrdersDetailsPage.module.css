@@ -11,3 +11,8 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.order_button {
+    margin: 20px 0;
+    width: 100%;
+}

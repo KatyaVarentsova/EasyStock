@@ -5,7 +5,7 @@ export const NotificationsPage = () => {
     return (
       <HomeLayout>
         <div className={styles.container}>
-          <button>ТЕСТ</button>
+          <button>ТЕСТ 3</button>
         </div>
       </HomeLayout>
     );

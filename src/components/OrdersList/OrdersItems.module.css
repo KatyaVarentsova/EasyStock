@@ -1,0 +1,25 @@
+.order_item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--color-light-gray);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.text {
+    margin: 0;
+}
+
+.item_details {
+    border: 1px solid var(--color-light-gray);
+    padding: 10px 15px;
+}
+
+.details_text {
+    margin: 0;
+}
+
+.order_link {
+    text-decoration: none;
+    color: var(--color-dark-gray);
+}

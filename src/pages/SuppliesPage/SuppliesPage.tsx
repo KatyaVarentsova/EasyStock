@@ -5,7 +5,7 @@ export const SuppliesPage = () => {
     return (
       <HomeLayout>
         <div className={styles.container}>
-          <button>ТЕСТ</button>
+          <button>ТЕСТ 10</button>
         </div>
       </HomeLayout>
     );

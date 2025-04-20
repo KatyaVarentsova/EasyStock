@@ -6,6 +6,7 @@ import {
   AnalyticsPage,
   NotificationsPage,
   OrdersDetailsPage,
+  SupplyDetailPage,
   OrdersPage,
   SuppliesPage,
 } from "../pages";
@@ -29,6 +30,8 @@ const AppRouter = () => (
         <Route path="/orders" element={<OrdersPage />} />
         <Route path="/supplies" element={<SuppliesPage />} />
         <Route path="/orders/:recordID" element={<OrdersDetailsPage />} />
+        <Route path="/supplies/:id" element={<SupplyDetailPage />} />
+        <Route path="/orders/:orderNumber" element={<OrdersDetailsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>

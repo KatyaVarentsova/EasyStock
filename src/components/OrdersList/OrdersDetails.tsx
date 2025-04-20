@@ -1,5 +1,8 @@
 import styles from './OrdersItems.module.css'
 
+
+
+
 type OrdersItemsProps = {
     article: number;
     section: string;
@@ -7,6 +10,7 @@ type OrdersItemsProps = {
 }
 
 export const OrdersDetails = ({ article, section, quantity}: OrdersItemsProps) => {
+    
     return (
         <li className={styles.item_details}>
             <p className={styles.details_text}>Секция {section}</p>

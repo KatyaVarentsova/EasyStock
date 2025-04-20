@@ -3,7 +3,7 @@ import axios from 'axios';
 const url =
   'https://true.tabs.sale/fusion/v1/datasheets/dstlr5pDegVHcXYZWA/records?viewId=viwXKQJReqX5j&fieldKey=name';
 
-export const getUsers = async () => {  
+export const getUsers = async () => {
   try {
     const response = await axios.get(url, {
       headers: {
@@ -13,6 +13,7 @@ export const getUsers = async () => {
       },
     });
     const users = response.data?.data?.records || [];
+   
     return users;
   } catch (error) {
     console.error('Ошибка при получении пользователей:', error);

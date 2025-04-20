@@ -3,8 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import {
   LoginPage,
   MainPage,
-  AnalyticsPage,
-  NotificationsPage,
+  LinkPage,
   OrdersDetailsPage,
   SupplyDetailPage,
   OrdersPage,
@@ -25,13 +24,11 @@ const AppRouter = () => (
         }
       >
         <Route path="/main" element={<MainPage />} />
-        <Route path="/analytics" element={<AnalyticsPage />} />
-        <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/link" element={<LinkPage />} />
         <Route path="/orders" element={<OrdersPage />} />
         <Route path="/supplies" element={<SuppliesPage />} />
         <Route path="/orders/:recordID" element={<OrdersDetailsPage />} />
         <Route path="/supplies/:id" element={<SupplyDetailPage />} />
-        <Route path="/orders/:orderNumber" element={<OrdersDetailsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>

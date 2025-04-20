@@ -27,8 +27,6 @@ export const OrdersDetailsPage = () => {
     const handleClick = () => {
         navigate('/orders');
     }
-
-
     return (
         <HomeLayout>
             <div className={styles.container}>

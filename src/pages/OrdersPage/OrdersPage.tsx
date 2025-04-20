@@ -28,9 +28,6 @@ export const OrdersPage = () => {
     };
     fetchData();
   }), [];
-
-
-
   return (
     <HomeLayout>
       <div className={styles.container}>

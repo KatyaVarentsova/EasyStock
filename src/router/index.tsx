@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-//import MainLayout from "../layouts/MainLayout";
+import MainLayout from "../layouts/MainLayout";
 import {
   LoginPage,
   MainPage,
@@ -16,7 +16,13 @@ const AppRouter = () => (
     <Routes>
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/login" element={<LoginPage />} />
-      <Route>
+      <Route
+        element={
+          <ProtectedRoute>
+            <MainLayout />
+          </ProtectedRoute>
+        }
+      >
         <Route path="/main" element={<MainPage />} />
         <Route path="/analytics" element={<AnalyticsPage />} />
         <Route path="/notifications" element={<NotificationsPage />} />

@@ -21,7 +21,7 @@ const Menu = () => {
 
           <div className={styles.menu}>
             <nav className={styles.nav}>
-              <NavLink to="/main" onClick={handleClose}>Товары →</NavLink>
+              
               <NavLink to="/orders" onClick={handleClose}>Заказы →</NavLink>
               <NavLink to="/supplies" onClick={handleClose}>Поставки →</NavLink>
               <NavLink to="/link" onClick={handleClose}>Онлайн склад →</NavLink>

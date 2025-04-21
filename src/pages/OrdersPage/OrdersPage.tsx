@@ -35,9 +35,12 @@ export const OrdersPage = () => {
       <div className={styles.container}>
         <h2>Заказы</h2>
         <ul className={styles.order_list}>
-          {orders.map((order, i) => (
+          {orders.length > 0 ? (
+          orders.map((order, i) => (
             <OrdersItem key={i} recordID={order.recordID} id={order.id} positions={order.positions}></OrdersItem>
-          ))}
+          ))) : (
+            <li>Нет заказов</li>
+          )} 
         </ul>
       </div>
     </HomeLayout>

@@ -21,10 +21,10 @@ const Menu = () => {
 
           <div className={styles.menu}>
             <nav className={styles.nav}>
+              
               <NavLink to="/orders" onClick={handleClose}>Заказы →</NavLink>
               <NavLink to="/supplies" onClick={handleClose}>Поставки →</NavLink>
-              <NavLink to="/reports" onClick={handleClose}>Отчёты →</NavLink>
-              <NavLink to="/products" onClick={handleClose}>Товары →</NavLink>
+              <NavLink to="/link" onClick={handleClose}>Онлайн склад →</NavLink>
             </nav>
           </div>
         </>

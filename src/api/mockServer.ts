@@ -108,7 +108,7 @@ export const updateProductsQuantity = async (products, addedQuantity) => {
       records: products.map((product) => ({
         recordId: product.recordId,
         fields: {
-          количество: (product.fields.количество || 0) + addedQuantity,
+          count: (product.fields.count || 0) + addedQuantity,
         },
       })),
       fieldKey: "name",

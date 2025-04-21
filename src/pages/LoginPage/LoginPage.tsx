@@ -17,7 +17,7 @@ export const LoginPage = () => {
   
     if (response.success) {
       console.log('Успешно вошли:', response.user);
-      navigate('/main');
+      navigate('/link');
       
     } else {
       alert(response.message);

@@ -53,7 +53,7 @@ export const SupplyDetailPage = () => {
 
       const updatedFields = {
         ...supply,
-        Статус: "завершено",
+        status: "завершено",
       };
 
       await updateSupplyStatus(recordId, updatedFields);
@@ -68,7 +68,7 @@ export const SupplyDetailPage = () => {
   };
 
   if (!supply) return <p>Загрузка...</p>;
-  const isArchived = supply?.Статус === "завершено";
+  const isArchived = supply?.status === "завершено";
 
   const createdAt = new Date(supply.createdAt).toLocaleDateString("ru-RU");
   const outDate = new Date(supply.outDate).toLocaleDateString("ru-RU");
